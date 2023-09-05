@@ -126,7 +126,7 @@ const demo = () => {
     </section>
     <hr className="my-2" />
 
-    <footer className="b-0 p-2 text-2xl bg-slate-200 w-full text-center">
+    <footer className="b-0 p-2 text-lg bg-slate-200 w-full text-center">
       <p>This project was created by Eric Gitau || <span className="text-blue-500 text-bold"><a href="tel:+254708118414">Eclar Khalid</a></span></p>
     </footer>
   </>
