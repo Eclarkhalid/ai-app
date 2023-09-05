@@ -121,6 +121,11 @@ const demo = () => {
         )}
       </div>
     </section>
+    <hr className="my-2" />
+
+    <footer className="b-0 p-2">
+      <p>This project was created by Eric Gitau || <span className="text-blue-500 text-bold">Eclar Khalid</span></p>
+    </footer>
   </>
 }
 
