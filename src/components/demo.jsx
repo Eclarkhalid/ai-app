@@ -70,7 +70,10 @@ const demo = () => {
           <button type="submit" className="submit_btn peer-focus:border-gray-700
           peer-focus:text-gray-700
           ">
-            Search
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+
           </button>
         </form>
 
@@ -100,7 +103,7 @@ const demo = () => {
       <div className="my-10 max-w-full flex justify-center items-center">
         {isFetching ? (
           <img src={loader} alt="loader" className="w-20 h-20 object-contain" />
-        ): error ? (
+        ) : error ? (
           <p className="font-inter font-bold text-black text-center">
             Sorry, an error occured!!
             <span className="font-satoshi font-normal text-gray-700">
@@ -124,7 +127,7 @@ const demo = () => {
     <hr className="my-2" />
 
     <footer className="b-0 p-2">
-      <p>This project was created by Eric Gitau || <span className="text-blue-500 text-bold">Eclar Khalid</span></p>
+      <p>This project was created by Eric Gitau || <span className="text-blue-500 text-bold"><a href="tel:+254708118414">Eclar Khalid</a></span></p>
     </footer>
   </>
 }
