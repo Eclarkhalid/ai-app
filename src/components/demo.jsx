@@ -47,7 +47,7 @@ const demo = () => {
   const handleCopy = (copyUrl) => {
     setCopied(copyUrl);
     navigator.clipboard.writeText(copyUrl);
-    setTimeout(() => setCopied(false), 3000);
+    setTimeout(() => setCopied(false), 4000);
   }
   return <>
     <section className="mt-16 w-full max-w-xl">
@@ -92,6 +92,16 @@ const demo = () => {
               <p className="flex-1 font-satoshi text-blue-700 font-medium text-sm truncate">
                 {item.url}
               </p>
+
+              <div onClick={() => handleCopy(item.summary)}>
+                {
+                  copied === item.summary ? <p className="flex-1 font-inter text-red-700 font-medium text-sm truncate">
+                  Copied
+                </p> : <p className="flex-1 font-inter text-blue-700 font-medium text-sm truncate">
+                  Copy Summary
+                </p>
+                }
+              </div>
             </div>
 
           ))}
