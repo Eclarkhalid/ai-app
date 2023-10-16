@@ -50,7 +50,7 @@ const demo = () => {
     setTimeout(() => setCopied(false), 4000);
   }
   return <>
-    <section className="mt-16 w-full max-w-xl">
+    <section className="mt-16 w-full max-w-xl min-h-screen">
       {/* search */}
       <div className="flex flex-col w-full gap-2">
         <form action="" className="relative flex justify-center items-center" onSubmit={handleSubmit}>
@@ -95,10 +95,10 @@ const demo = () => {
               <div onClick={() => handleCopy(item.summary)}>
                 {
                   copied === item.summary ? <p className="flex-1 font-inter text-red-700 font-medium text-sm truncate">
-                  Copied
-                </p> : <p className="flex-1 font-inter text-blue-700 font-medium text-sm truncate">
-                  Copy Summary
-                </p>
+                    Copied
+                  </p> : <p className="flex-1 font-inter text-blue-700 font-medium text-sm truncate">
+                    Copy Summary
+                  </p>
                 }
               </div>
             </div>
@@ -136,7 +136,7 @@ const demo = () => {
     <hr className="my-2" />
 
     <footer className=" b-0 p-2 text-lg w-full text-center ">
-      <p className="font-inter">This project was created by Eric Gitau || <span className="text-blue-500 text-bold"><a href="tel:+254708118414">Eclar Khalid</a></span> &copy; 2023</p>
+      <p className="font-inter">This project was created by Eric Gitau || <span className="text-blue-500 text-bold"><a href="http://localhost:5173/projects">Eclar Khalid</a></span> &copy; 2023</p>
     </footer>
   </>
 }
