@@ -137,7 +137,7 @@ const demo = () => {
     <hr className="my-2" />
 
     <footer className=" b-0 p-2 text-lg w-full text-center ">
-      <p className="font-inter">This project was created by Eric Gitau || <span className="text-blue-500 text-bold"><a href="http://localhost:5173/projects">Eclar Khalid</a></span> &copy; 2023</p>
+      <p className="font-inter">This project was created by Eric Gitau || <span className="text-blue-500 text-bold"><a href="https://portfolio-eclarkhalid.vercel.app/">Eclar Khalid</a></span> &copy; 2023</p>
     </footer>
   </>
 }
